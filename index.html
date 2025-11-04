@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autonomous Lab - The World's First Autonomous Scientific Laboratory</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobile-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-static@0.294.0/font/lucide.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-pill">
+            <div class="nav-content">
+                <div class="logo">
+                    <svg width="36" height="36" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="18" stroke="url(#gradient1)" stroke-width="2"/>
+                        <path d="M20 8V32M12 20H28M15 13L25 27M25 13L15 27" stroke="url(#gradient1)" stroke-width="2" stroke-linecap="round"/>
+                        <defs>
+                            <linearGradient id="gradient1" x1="0" y1="0" x2="40" y2="40">
+                                <stop offset="0%" style="stop-color:#00d4ff"/>
+                                <stop offset="100%" style="stop-color:#ffd700"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span>Autonomous Lab</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#vision">Vision</a></li>
+                    <li><a href="#agents">Agents</a></li>
+                    <li><a href="#workflow">Workflow</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#roadmap">Roadmap</a></li>
+                </ul>
+                <button class="btn-primary">Get Started</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-wrapper">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        The World's First
+                        <span class="gradient-text">Autonomous Scientific</span>
+                        Laboratory
+                    </h1>
+                    <p class="hero-description">
+                        An AI ecosystem that thinks, reasons, and discovers 24/7. Specialized agents 
+                        collaborate like human scientists to accelerate scientific discovery 
+                        and reduce your cognitive load.
+                    </p>
+                </div>
+                <div class="hero-left">
+                    <div class="hero-graphic">
+                        <img src="footage/Isometric AI-Driven Laboratory for Drug Development and Biotechnology.svg" alt="AI-Driven Laboratory Illustration" class="hero-illustration">
+                    </div>
+                    <div class="hero-cta">
+                        <button class="btn-primary btn-large">Launch Lab</button>
+                        <button class="btn-secondary btn-large">View Demo</button>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Continuous Operation</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">9</div>
+                    <div class="stat-label">Specialized Agents</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">∞</div>
+                    <div class="stat-label">Continuous Self-Improvement</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section id="vision" class="vision-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What The Lab Does</h2>
+                <p class="section-subtitle">
+                    A system that doesn't just respond — it thinks, debates, and evolves
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+                    </div>
+                    <h3>Massive Analysis</h3>
+                    <p>Reads and analyzes thousands of scientific articles from PubMed, Semantic Scholar, CrossRef, CNKI, and more</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v12"/><path d="M18 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M6 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M15 6a9 9 0 0 0-9 9"/></svg>
+                    </div>
+                    <h3>In Silico Simulations</h3>
+                    <p>Executes molecular simulations with NVIDIA BioNeMo to theoretically validate hypotheses</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                    </div>
+                    <h3>Contradiction Detection</h3>
+                    <p>Identifies inconsistencies and correlations between studies from different sources and time periods</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>
+                    </div>
+                    <h3>Automatic Writing</h3>
+                    <p>Generates scientific articles in IMRaD format with academic rigor and verified references</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
+                    </div>
+                    <h3>Hypothesis Generation</h3>
+                    <p>Proposes new scientific hypotheses based on non-obvious patterns and connections</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/></svg>
+                    </div>
+                    <h3>Continuous Self-Improvement</h3>
+                    <p>Learns from its mistakes and optimizes its prompts and strategies without human intervention</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agents Section -->
+    <section id="agents" class="agents-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Agent Architecture</h2>
+                <p class="section-subtitle">
+                    Each agent has a specialty, personality, and unique set of skills
+                </p>
+            </div>
+            <div class="agents-grid">
+                <div class="agent-card">
+                    <div class="agent-header">
+                        <div class="agent-avatar agent-logo" style="background: #ffffff;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/512px-ChatGPT_logo.svg.png" alt="OpenAI" style="width: 32px; height: 32px;">
+                        </div>
+                        <div>
+                            <h3>Reader Agent</h3>
+                            <span class="agent-model">GPT-4o-mini / Llama 3.1</span>
+                        </div>
+                    </div>
+                    <p class="agent-description">
+                        Reads scientific papers, extracts key variables, claims, and methodologies. 
+                        Indexes content semantically for instant search.
+                    </p>
+                </div>
+
+                <div class="agent-card">
+                    <div class="agent-header">
+                        <div class="agent-avatar agent-logo" style="background: #ffffff;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Google_Gemini_logo.svg/512px-Google_Gemini_logo.svg.png" alt="Google Gemini" style="width: 32px; height: 32px;">
+                        </div>
+                        <div>
+                            <h3>Reviewer Agent</h3>
+                            <span class="agent-model">GPT-5 / Gemini Pro</span>
+                        </div>
+                    </div>
+                    <p class="agent-description">
+                        Evaluates scientific soundness, methodologies, and statistical validity of 
+                        findings. Ensures academic rigor.
+                    </p>
+                </div>
+
+                <div class="agent-card">
+                    <div class="agent-header">
+                        <div class="agent-avatar agent-logo" style="background: #ffffff;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/512px-ChatGPT_logo.svg.png" alt="OpenAI" style="width: 32px; height: 32px;">
+                        </div>
+                        <div>
+                            <h3>Contradictions Agent</h3>
+                            <span class="agent-model">GPT-5-Reasoning</span>
+                        </div>
+                    </div>
+                    <p class="agent-description">
+                        Searches for inconsistencies between papers, questions conclusions, and generates 
+                        scientific debates between contradictory findings.
+                    </p>
+                </div>
+
+                <div class="agent-card">
+                    <div class="agent-header">
+                        <div class="agent-avatar agent-logo" style="background: #ffffff;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Google_Gemini_logo.svg/512px-Google_Gemini_logo.svg.png" alt="Google Gemini" style="width: 32px; height: 32px;">
+                        </div>
+                        <div>
+                            <h3>Writer Agent</h3>
+                            <span class="agent-model">GPT-5 / Gemini</span>
+                        </div>
+                    </div>
+                    <p class="agent-description">
+                        Drafts complete scientific articles, research reports, and 
+                        technical documentation in academic format.
+                    </p>
+                </div>
+
+                <div class="agent-card">
+                    <div class="agent-header">
+                        <div class="agent-avatar agent-logo" style="background: #76b900;">
+                            <img src="https://upload.wikimedia.org/wikipedia/sco/thumb/2/21/Nvidia_logo.svg/512px-Nvidia_logo.svg.png" alt="NVIDIA" style="width: 32px; height: 32px; filter: brightness(0) invert(1);">
+                        </div>
+                        <div>
+                            <h3>Simulation Agent</h3>
+                            <span class="agent-model">NVIDIA BioNeMo</span>
+                        </div>
+                    </div>
+                    <p class="agent-description">
+                        Executes molecular simulations of protein-protein interactions 
+                        using NVIDIA BioNeMo and ESMFold.
+                    </p>
+                </div>
+
+                <div class="agent-card">
+                    <div class="agent-header">
+                        <div class="agent-avatar agent-logo" style="background: #ffffff;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Google_Gemini_logo.svg/512px-Google_Gemini_logo.svg.png" alt="Google Gemini" style="width: 32px; height: 32px;">
+                        </div>
+                        <div>
+                            <h3>Translator Agent</h3>
+                            <span class="agent-model">Gemini-Pro</span>
+                        </div>
+                    </div>
+                    <p class="agent-description">
+                        Translates papers between multiple languages (English, Spanish, Chinese, Russian) 
+                        while maintaining technical precision.
+                    </p>
+                </div>
+
+                <div class="agent-card">
+                    <div class="agent-header">
+                        <div class="agent-avatar agent-logo" style="background: #0668E1;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/1200px-Meta_Platforms_Inc._logo.svg/512px-1200px-Meta_Platforms_Inc._logo.svg.png" alt="Meta Llama" style="width: 32px; height: 32px; filter: brightness(0) invert(1);">
+                        </div>
+                        <div>
+                            <h3>Atlas Agent</h3>
+                            <span class="agent-model">Llama-4 / OpenAI Embeddings</span>
+                        </div>
+                    </div>
+                    <p class="agent-description">
+                        Maps connections between concepts and papers in a navigable, 
+                        interactive 3D knowledge graph.
+                    </p>
+                </div>
+
+                <div class="agent-card">
+                    <div class="agent-header">
+                        <div class="agent-avatar agent-logo" style="background: #ffffff;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/512px-ChatGPT_logo.svg.png" alt="OpenAI" style="width: 32px; height: 32px;">
+                        </div>
+                        <div>
+                            <h3>Improvement Agent</h3>
+                            <span class="agent-model">GPT-5-Thinking</span>
+                        </div>
+                    </div>
+                    <p class="agent-description">
+                        Evaluates the performance of other agents, optimizes prompts, and continuously 
+                        improves reasoning strategies.
+                    </p>
+                </div>
+
+                <div class="agent-card featured-agent">
+                    <div class="agent-header">
+                        <div class="agent-avatar agent-logo" style="background: linear-gradient(135deg, #00d4ff 0%, #ffd700 100%);">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/512px-ChatGPT_logo.svg.png" alt="OpenAI" style="width: 32px; height: 32px;">
+                        </div>
+                        <div>
+                            <h3>TeamLead (Orchestrator)</h3>
+                            <span class="agent-model">GPT-5-Reasoning / Gemini-1.5</span>
+                        </div>
+                    </div>
+                    <p class="agent-description">
+                        Coordinates all agents, intelligently distributes tasks, and decides 
+                        which processes to execute based on priorities and available resources.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflow Section -->
+    <section id="workflow" class="workflow-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">A Day in the Laboratory</h2>
+                <p class="section-subtitle">
+                    Complete cycle of autonomous research 24/7
+                </p>
+            </div>
+            
+            <!-- Mermaid Workflow Diagram -->
+            <div class="mermaid-container">
+                <div class="mermaid-box">
+                    <div class="mermaid-label">Input & Indexing</div>
+                    <div class="mermaid-desc">Load articles from PubMed, CrossRef, CNKI</div>
+                </div>
+                
+                <div class="mermaid-arrow-down">↓</div>
+                
+                <div class="mermaid-box">
+                    <div class="mermaid-label">Research Kickoff</div>
+                    <div class="mermaid-desc">TeamLead distributes tasks to specialized agents</div>
+                </div>
+                
+                <div class="mermaid-arrow-down">↓</div>
+                
+                <div class="mermaid-box">
+                    <div class="mermaid-label">Analysis & Contradictions</div>
+                    <div class="mermaid-desc">Debate contradictory papers until consensus</div>
+                </div>
+                
+                <div class="mermaid-arrow-down">↓</div>
+                
+                <div class="mermaid-box">
+                    <div class="mermaid-label">Simulations</div>
+                    <div class="mermaid-desc">NVIDIA BioNeMo & ESMFold validation</div>
+                </div>
+                
+                <div class="mermaid-arrow-down">↓</div>
+                
+                <div class="mermaid-box">
+                    <div class="mermaid-label">Writing & Review</div>
+                    <div class="mermaid-desc">Generate IMRaD drafts for publication</div>
+                </div>
+                
+                <div class="mermaid-arrow-down">↓</div>
+                
+                <div class="mermaid-box">
+                    <div class="mermaid-label">Learning & Optimization</div>
+                    <div class="mermaid-desc">Improve prompts and reasoning strategies</div>
+                </div>
+                
+                <div class="mermaid-arrow-down">↓</div>
+                
+                <div class="mermaid-box">
+                    <div class="mermaid-label">Daily Report</div>
+                    <div class="mermaid-desc">Automated newsletter with discoveries</div>
+                </div>
+                
+                <div class="mermaid-arrow-down">↓</div>
+                
+                <div class="mermaid-box mermaid-box-cycle">
+                    <div class="mermaid-label">Silent Processes (Night)</div>
+                    <div class="mermaid-desc">24/7 re-analysis and correlation search</div>
+                </div>
+                
+                <div class="mermaid-cycle-arrow">
+                    <span>↻ Repeat 24/7</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Differentiators Section -->
+    <section class="differentiators-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Makes It Different</h2>
+                <p class="section-subtitle">
+                    Not just a tool — it's a living research ecosystem
+                </p>
+            </div>
+            <div class="differentiators-grid">
+                <div class="diff-card">
+                    <div class="diff-number">01</div>
+                    <h3>Self-Learning</h3>
+                    <p>Agents continuously improve without human intervention, rewriting their own prompts and strategies.</p>
+                </div>
+                <div class="diff-card">
+                    <div class="diff-number">02</div>
+                    <h3>Long-Term Memory</h3>
+                    <p>Correlates papers from different decades and multiple languages with extended context of millions of tokens.</p>
+                </div>
+                <div class="diff-card">
+                    <div class="diff-number">03</div>
+                    <h3>Collaborative Work</h3>
+                    <p>Agents debate, contradict each other, and justify decisions like a real team of scientists.</p>
+                </div>
+                <div class="diff-card">
+                    <div class="diff-number">04</div>
+                    <h3>Real Simulations</h3>
+                    <p>Direct connection with NVIDIA BioNeMo for immediate theoretical validation of molecular hypotheses.</p>
+                </div>
+                <div class="diff-card">
+                    <div class="diff-number">05</div>
+                    <h3>Hybrid Ecosystem</h3>
+                    <p>Combines generative AI, vector databases, knowledge graphs, and human feedback in a single system.</p>
+                </div>
+                <div class="diff-card">
+                    <div class="diff-number">06</div>
+                    <h3>Organic Scalability</h3>
+                    <p>TeamLead can "hire" more agents dynamically based on workload requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Plans & Pricing</h2>
+                <p class="section-subtitle">
+                    Choose the laboratory that fits your needs
+                </p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Basic Lab</h3>
+                        <div class="pricing-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">99</span>
+                            <span class="price-period">/mo</span>
+                        </div>
+                        <p class="pricing-description">For individual researchers</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ 10-20 active agents</li>
+                        <li>✓ Paper analysis</li>
+                        <li>✓ Automatic correlations</li>
+                        <li>✓ Daily summary</li>
+                        <li>✓ GPT-4o-mini / Llama-3.1</li>
+                        <li>✓ Email support</li>
+                    </ul>
+                    <button class="btn-pricing">Get Started</button>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Pro Lab</h3>
+                        <div class="pricing-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">499</span>
+                            <span class="price-period">/mo</span>
+                        </div>
+                        <p class="pricing-description">For universities and research groups</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ 50-100 active agents</li>
+                        <li>✓ All Basic Lab features</li>
+                        <li>✓ BioNeMo simulations</li>
+                        <li>✓ Article generation</li>
+                        <li>✓ Inter-paper debates</li>
+                        <li>✓ GPT-5 / Gemini-1.5</li>
+                        <li>✓ Advanced dashboard</li>
+                        <li>✓ Priority support</li>
+                    </ul>
+                    <button class="btn-pricing btn-primary">Get Started</button>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise Lab</h3>
+                        <div class="pricing-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">2,000</span>
+                            <span class="price-period">/mo</span>
+                        </div>
+                        <p class="pricing-description">For biotech companies</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ 200+ parallel agents</li>
+                        <li>✓ All Pro Lab features</li>
+                        <li>✓ Multi-user</li>
+                        <li>✓ Custom APIs</li>
+                        <li>✓ Cost control</li>
+                        <li>✓ GPT-5-Reasoning / Llama-4</li>
+                        <li>✓ BioNeMo Mega</li>
+                        <li>✓ 24/7 dedicated support</li>
+                        <li>✓ Guaranteed SLA</li>
+                    </ul>
+                    <button class="btn-pricing">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="roadmap-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Product Roadmap</h2>
+                <p class="section-subtitle">
+                    The path to total scientific autonomy
+                </p>
+            </div>
+            <div class="roadmap-container">
+                <div class="roadmap-phase">
+                    <div class="phase-timeline">
+                        <div class="phase-badge">Phase 0</div>
+                        <div class="phase-duration">0-2 weeks</div>
+                    </div>
+                    <div class="phase-content">
+                        <h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: middle; margin-right: 0.5rem;"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg>Foundations</h3>
+                        <p>Establish technical base, index initial papers, configure AI pipeline, and create first functional prototype.</p>
+                        <div class="phase-metrics">
+                            <span class="metric">Cost: ~$150/mo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="roadmap-phase">
+                    <div class="phase-timeline">
+                        <div class="phase-badge">Phase 1</div>
+                        <div class="phase-duration">1-2 months</div>
+                    </div>
+                    <div class="phase-content">
+                        <h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: middle; margin-right: 0.5rem;"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6"/><path d="m4.2 4.2 4.2 4.3m7.2 7.2 4.2 4.3M1 12h6m6 0h6"/><path d="m4.2 19.8 4.2-4.3m7.2-7.2 4.2-4.3"/></svg>Autonomous MVP</h3>
+                        <p>8 coordinated agents, automatic daily reports, functional dashboard, and full integration with Google Workspace.</p>
+                        <div class="phase-metrics">
+                            <span class="metric">Cost: $250-350/mo</span>
+                            <span class="metric">Launch: Week 8</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="roadmap-phase">
+                    <div class="phase-timeline">
+                        <div class="phase-badge">Phase 2</div>
+                        <div class="phase-duration">3-6 months</div>
+                    </div>
+                    <div class="phase-content">
+                        <h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: middle; margin-right: 0.5rem;"><path d="M12 2v6"/><path d="M12 22v-6"/><circle cx="12" cy="12" r="2"/><path d="m4.9 4.9 1.4 1.4"/><path d="m17.7 17.7 1.4 1.4"/><path d="M2 12h2"/><path d="M22 12h-2"/><path d="m4.9 19.1 1.4-1.4"/><path d="m17.7 6.3 1.4-1.4"/></svg>Self-Improvement & Reasoning</h3>
+                        <p>Real simulations with BioNeMo, multi-agent debates, self-optimization system, and internal benchmarks.</p>
+                        <div class="phase-metrics">
+                            <span class="metric">Cost: $400-600/mo</span>
+                            <span class="metric">Launch: Month 6</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="roadmap-phase">
+                    <div class="phase-timeline">
+                        <div class="phase-badge">Phase 3</div>
+                        <div class="phase-duration">6-12 months</div>
+                    </div>
+                    <div class="phase-content">
+                        <h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: middle; margin-right: 0.5rem;"><path d="M2 15c6.667-6 13.333 0 20-6"/><path d="M9 22c1.798-1.998 2.518-3.995 2.807-5.993"/><path d="M15 2c-1.798 1.998-2.518 3.995-2.807 5.993"/><path d="m17 6-2.5-2.5"/><path d="m14 8-1-1"/><path d="m7 18 2.5 2.5"/><path d="m3.5 14.5.5.5"/><path d="m20 9 .5.5"/><path d="m6.5 12.5 1 1"/><path d="m16.5 10.5 1 1"/><path d="m10 16 1.5 1.5"/></svg>Global Scalability</h3>
+                        <p>Independent multi-labs, dynamic scalability, international API integration, and public beta version.</p>
+                        <div class="phase-metrics">
+                            <span class="metric">Cost: $1,000-2,000/mo</span>
+                            <span class="metric">Launch: Month 12</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="roadmap-phase">
+                    <div class="phase-timeline">
+                        <div class="phase-badge">Phase 4</div>
+                        <div class="phase-duration">12-24 months</div>
+                    </div>
+                    <div class="phase-content">
+                        <h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: middle; margin-right: 0.5rem;"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>Global Research Network</h3>
+                        <p>Worldwide laboratory connections, Global Knowledge Atlas, cross-regional evaluation, and collaborative ecosystem.</p>
+                        <div class="phase-metrics">
+                            <span class="metric">Cost: $3,000-5,000/mo per node</span>
+                            <span class="metric">Launch: Year 2</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="roadmap-phase">
+                    <div class="phase-timeline">
+                        <div class="phase-badge">Phase 5</div>
+                        <div class="phase-duration">24-36 months</div>
+                    </div>
+                    <div class="phase-content">
+                        <h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: middle; margin-right: 0.5rem;"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>Total Autonomy</h3>
+                        <p>Complete self-evolution, hierarchical agent organization, automatic publishing, and optional human oversight.</p>
+                        <div class="phase-metrics">
+                            <span class="metric">Impact: Transformational</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready To Transform Your Research?</h2>
+                <p>
+                    Join the autonomous scientific research revolution. 
+                    Start your virtual laboratory today.
+                </p>
+                <div class="cta-buttons">
+                    <button class="btn-primary btn-large">Start Free Trial</button>
+                    <button class="btn-secondary btn-large">Schedule Demo</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="18" stroke="url(#gradient2)" stroke-width="2"/>
+                            <path d="M20 8V32M12 20H28M15 13L25 27M25 13L15 27" stroke="url(#gradient2)" stroke-width="2" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="gradient2" x1="0" y1="0" x2="40" y2="40">
+                                    <stop offset="0%" style="stop-color:#00d4ff"/>
+                                    <stop offset="100%" style="stop-color:#ffd700"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span>Autonomous Lab</span>
+                    </div>
+                    <p>The world's first autonomous scientific laboratory</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#vision">Vision</a></li>
+                            <li><a href="#agents">Agents</a></li>
+                            <li><a href="#workflow">Workflow</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">API Reference</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Use Cases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Autonomous Lab. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
