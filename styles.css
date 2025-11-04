@@ -284,7 +284,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: 120px;
+    padding-top: 180px;
     overflow: hidden;
 }
 
@@ -534,6 +534,172 @@ body {
 section {
     padding: 6rem 0;
     position: relative;
+    overflow: hidden;
+}
+
+/* Background orbs for sections */
+.vision-section,
+.agents-section,
+.workflow-section,
+.differentiators-section,
+.pricing-section,
+.roadmap-section {
+    position: relative;
+}
+
+.vision-section::before,
+.agents-section::before,
+.workflow-section::before,
+.differentiators-section::before,
+.pricing-section::before,
+.roadmap-section::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.3;
+    z-index: 0;
+    animation: float 10s ease-in-out infinite;
+}
+
+.vision-section::after,
+.agents-section::after,
+.workflow-section::after,
+.differentiators-section::after,
+.pricing-section::after,
+.roadmap-section::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.3;
+    z-index: 0;
+    animation: float 10s ease-in-out infinite;
+}
+
+/* Vision Section Orbs */
+.vision-section::before {
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(0, 212, 255, 0.4) 0%, transparent 70%);
+    top: -100px;
+    right: -150px;
+    animation-delay: 1s;
+}
+
+.vision-section::after {
+    width: 450px;
+    height: 450px;
+    background: radial-gradient(circle, rgba(255, 215, 0, 0.4) 0%, transparent 70%);
+    bottom: -100px;
+    left: -100px;
+    animation-delay: 4s;
+}
+
+/* Agents Section Orbs */
+.agents-section::before {
+    width: 550px;
+    height: 550px;
+    background: radial-gradient(circle, rgba(255, 215, 0, 0.5) 0%, transparent 70%);
+    top: 10%;
+    left: -200px;
+    animation-delay: 2s;
+}
+
+.agents-section::after {
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(0, 229, 255, 0.4) 0%, transparent 70%);
+    bottom: 10%;
+    right: -150px;
+    animation-delay: 5s;
+}
+
+/* Workflow Section Orbs */
+.workflow-section::before {
+    width: 480px;
+    height: 480px;
+    background: radial-gradient(circle, rgba(0, 212, 255, 0.4) 0%, transparent 70%);
+    top: 50%;
+    right: -100px;
+    animation-delay: 0s;
+}
+
+.workflow-section::after {
+    width: 420px;
+    height: 420px;
+    background: radial-gradient(circle, rgba(255, 215, 0, 0.4) 0%, transparent 70%);
+    top: 20%;
+    left: -150px;
+    animation-delay: 3s;
+}
+
+/* Differentiators Section Orbs */
+.differentiators-section::before {
+    width: 520px;
+    height: 520px;
+    background: radial-gradient(circle, rgba(0, 229, 255, 0.4) 0%, transparent 70%);
+    top: -80px;
+    left: -100px;
+    animation-delay: 1.5s;
+}
+
+.differentiators-section::after {
+    width: 460px;
+    height: 460px;
+    background: radial-gradient(circle, rgba(255, 215, 0, 0.5) 0%, transparent 70%);
+    bottom: -100px;
+    right: -120px;
+    animation-delay: 4.5s;
+}
+
+/* Pricing Section Orbs */
+.pricing-section::before {
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(255, 215, 0, 0.4) 0%, transparent 70%);
+    top: 15%;
+    right: -150px;
+    animation-delay: 2.5s;
+}
+
+.pricing-section::after {
+    width: 480px;
+    height: 480px;
+    background: radial-gradient(circle, rgba(0, 212, 255, 0.4) 0%, transparent 70%);
+    bottom: 20%;
+    left: -100px;
+    animation-delay: 5.5s;
+}
+
+/* Roadmap Section Orbs */
+.roadmap-section::before {
+    width: 550px;
+    height: 550px;
+    background: radial-gradient(circle, rgba(0, 212, 255, 0.5) 0%, transparent 70%);
+    top: -100px;
+    left: -150px;
+    animation-delay: 1s;
+}
+
+.roadmap-section::after {
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(0, 229, 255, 0.4) 0%, transparent 70%);
+    bottom: -80px;
+    right: -100px;
+    animation-delay: 4s;
+}
+
+/* Ensure content is above orbs */
+.vision-section > .container,
+.agents-section > .container,
+.workflow-section > .container,
+.differentiators-section > .container,
+.pricing-section > .container,
+.roadmap-section > .container {
+    position: relative;
+    z-index: 1;
 }
 
 .section-header {
@@ -614,7 +780,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--gradient-primary);
+    background: var(--text-primary);
     border-radius: 18px;
     margin-bottom: 1.5rem;
     color: white;
@@ -663,21 +829,74 @@ section {
     border: 1px solid var(--glass-border);
     box-shadow: var(--shadow-sm);
     transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.agent-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+    transition: all 0.3s ease;
+}
+
+.agent-card > * {
+    position: relative;
+    z-index: 1;
 }
 
 .agent-card:hover {
     transform: translateY(-8px);
-    box-shadow: var(--shadow-xl);
-    background: var(--bg-glass-hover);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(0, 212, 255, 0.3);
+}
+
+.agent-card:hover::before {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* Agent Card Background Images */
+.agent-card:nth-child(1),
+.agent-card:nth-child(3),
+.agent-card:nth-child(8),
+.agent-card:nth-child(9) {
+    background-image: url('footage/chagpt.webp');
+}
+
+.agent-card:nth-child(5) {
+    background-image: url('footage/nvidia.webp');
+}
+
+.agent-card:nth-child(2),
+.agent-card:nth-child(4),
+.agent-card:nth-child(6) {
+    background-image: url('footage/other.webp');
+}
+
+.agent-card:nth-child(7) {
+    background-image: url('footage/other2.webp');
 }
 
 .featured-agent {
     grid-column: span 2;
-    background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, rgba(255, 215, 0, 0.1) 100%);
+    background-image: url('footage/chagpt.webp');
+    background-size: cover;
+    background-position: center;
     backdrop-filter: var(--glass-backdrop);
     -webkit-backdrop-filter: var(--glass-backdrop);
     border: 2px solid rgba(0, 212, 255, 0.3);
     box-shadow: var(--shadow-md), var(--shadow-glow);
+}
+
+.featured-agent::before {
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .agent-header {
@@ -717,17 +936,17 @@ section {
     font-size: 1.25rem;
     font-weight: 700;
     font-family: 'Space Grotesk', sans-serif;
-    color: var(--text-primary);
+    color: #ffffff;
 }
 
 .agent-model {
     font-size: 0.75rem;
-    color: var(--text-light);
+    color: rgba(255, 255, 255, 0.7);
     font-weight: 500;
 }
 
 .agent-description {
-    color: var(--text-secondary);
+    color: rgba(255, 255, 255, 0.9);
     line-height: 1.7;
 }
 
@@ -1267,7 +1486,7 @@ section {
     position: relative;
     overflow: hidden;
     border-radius: 50px 50px 0 0;
-    margin-top: 4rem;
+    margin-top: 0;
 }
 
 .footer::before {
